@@ -230,6 +230,12 @@ a {
  /* Mobile  */
 
  @media screen and (max-width: 768px) {
+
+.container {
+    max-width: 720px;
+     }
+
+
 html {
     font-size: 10px;
 }
@@ -238,7 +244,7 @@ html {
 } 
 
 .flex-47, .flex-30 {
-    flex: 1 1 100%;
+    flex: 0 1 100%;
     margin: 1rem 0;
 }
 
@@ -263,9 +269,7 @@ html {
 
 /* Article */ 
 
-.hero {
-    padding: 0 1.5rem;
-}
+
 .article .flex {
     flex-direction: column-reverse;
 }
@@ -296,4 +300,10 @@ html {
 .social a {
     font-size: 1.3rem;
 }
+ }
+
+ @media screen and (max-width: 500px) {
+     .container {
+         max-width: 460px;
+     }
  }
