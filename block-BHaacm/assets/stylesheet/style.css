@@ -205,7 +205,7 @@ a {
  }
 
  .blog-img img {
-     height: 250px;
+     max-height: 220px;
      object-fit: cover;
  }
 
