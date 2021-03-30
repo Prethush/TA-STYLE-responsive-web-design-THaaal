@@ -1,0 +1,653 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Variables */
+
+:root {
+    --primary: rgb(2,18,45);
+    --secondary: rgb(247,67,77);
+    --white: #fff;
+    --tertiary: rgb(37,57,123);
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* Body */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    color: var(--primary);
+}
+
+/* Container */
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+/* General Styles */
+
+a {
+    text-decoration: none;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.padding {
+    padding: 4rem 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: .275rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    padding: .75rem 2rem;
+}
+
+.btn-secondary {
+    padding: .75rem 1.5rem;
+}
+.btn:hover {
+    opacity: .7;
+}
+
+.h3-style {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem; 
+}
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.item-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+.flex-47 {
+    flex: 0 1 47%;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+
+.flex-50 {
+    flex: 0 1 50%;
+}
+
+.flex-40 {
+    flex: 0 1 40%;
+}
+.flex-20 {
+    flex: 0 1 20%;
+}
+.flex-25 {
+    flex: 0 1 25%;
+}
+.flex-45  {
+    flex: 0 1 45%;
+}
+.flex-23 {
+    flex: 0 1 23%;
+}
+/* Header */ 
+
+.header {
+    padding: 1.8rem 0;
+    position: absolute;
+    width: 100%;
+}
+.header .bars, header #toggle{
+    display: none;
+}
+.logo h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav-menu li {
+    margin-left: 2.2rem;
+}
+
+.nav-menu a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #fff;
+}
+.nav-menu a:hover {
+    color: var(--secondary);
+}
+.nav-menu .btn:hover {
+    color: #fff;
+}
+/* Hero */ 
+
+.hero {
+    background: linear-gradient(to bottom, rgba(63,85,179, .9), rgba(79,89,184, .9)), url(/assets/banner.png) no-repeat;
+    background-size: cover;
+    padding-bottom: 8rem;
+}
+
+.hero-item {
+    position: relative;
+    top: 4rem;
+    color: #fff;
+}
+
+.hero-item h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+.hero-item .active {
+    color: var(--secondary);
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-item img {
+    object-fit: cover;
+}
+
+/* About */
+
+#about {
+    background-color: #fff;
+}
+.about-text h2 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.about-text p {
+    font-weight: 300;
+    margin-bottom: 1.1rem;
+}
+.about-item img {
+    object-fit: cover;
+}
+/* Services */
+
+#services {
+    background-color: rgb(223,235,254);
+}
+
+.service-item {
+    border: 2px dashed var(--secondary);
+    padding: 1rem;
+    position: relative;
+}
+
+.service-item span {
+    color: var(--secondary);
+    font-weight: 800;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -1.3rem;
+    width: 40px;
+    height: 40px;
+     background-color: rgb(223,235,254);
+     display: block;
+     text-align: center;
+    z-index: 3;
+}
+
+.service-item h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.service-item p {
+    font-weight: 300;
+}
+
+/* Schedule */
+
+.schedule {
+    background-color: #fff;
+}
+.schedule-item {
+    /* background-color: yellow; */
+    position: relative;
+}
+.schedule-item .circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+    margin: 0;
+} 
+
+.dotted h3 {
+    
+    font-weight: 900;
+    
+}
+.schedule-item .active{
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.schedule-item .dotted {
+    border: 2px dashed var(--secondary);
+    color: var(--secondary);
+}
+
+.schedule-item .dotted:hover {
+    border: 0;
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+.schedule-item .line {
+    display: inline-block;
+    width: 2px;
+    height: 3rem;
+    border: 1px dashed var(--secondary);
+     position: relative; 
+    left: 4.8rem;
+    top: 5px;
+   
+}
+
+.circle h3 {
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+
+.schedule-img {
+    margin-bottom: 3rem;
+}
+
+.schedule-item img {
+    border-radius: 6px;
+}
+.schedule-article {
+    margin-bottom: 5.2rem;
+}
+.schedule-article h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.schedule-article p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Details */
+
+.details {
+    background-color: rgb(223,235,254);
+}
+.details-item {
+    /* background-color: yellow; */
+    border-radius: 4px;
+    padding: 1.5rem 0;
+    color: #000;
+}
+
+.details-container .active {
+    background-color: var(--secondary);
+    color: #fff;
+}
+.details-item:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+.details-item h5 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.details h6 {
+    font-size: 1.1rem;
+}
+
+/* Media */
+
+.media {
+    background-color: #fff;
+}
+.media-container {
+    background: url(/assets/banner.png) center center no-repeat;
+    background-size: cover;
+    padding: 15rem 0;
+    border-radius: .6rem;
+    object-fit: cover;
+}
+
+.media-container span {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.media-container span i {
+    color: var(--secondary);
+    z-index: 5;
+    font-size: 3.8rem;
+    margin-left: .5rem;
+    
+}
+
+/* News */
+
+.news {
+    background-color: rgb(223,235,254);
+    padding-bottom: 8rem;
+}
+.news-item h6 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: .6rem 0;
+}
+
+.news-item p {
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.news-item a {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.news-item .active {
+    color: var(--secondary);
+}
+
+.news-item a:hover {
+    color: var(--secondary);
+}
+
+/* Footer */
+
+.footer{
+    background-color: rgb(37,57,123);
+    color: #fff;
+}
+
+.footer-top-item h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+
+.sub-menu li a{
+    color: #fff;
+}
+
+.social a i{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.footer-bottom {
+    background-color: rgb(21,47,106);
+    padding: 1rem 0;
+    color: #fff;
+    font-size: .8rem;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 720px;
+    }
+    html {
+        font-size: 12px;
+    }
+    .flex-100 {
+        flex: 0 1 100%;
+        margin: 1.5rem 0;
+    }
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .flex-80 {
+        flex: 0 1 80%;
+        margin: 1rem 0;
+    }
+
+    /* Header */
+    .header .bars{
+        display: inline-block;
+        z-index: 100;
+    }
+    .nav {
+        display: none;
+    }
+    #toggle:checked ~ .nav {
+        display: inline-block;
+    }
+    .bars {
+        color: #fff;
+        font-size: 2rem;
+        position: fixed;
+        right: 6rem;
+        top: 2rem;
+    }
+     .nav-menu {
+        display: block;
+        text-align: center;
+    } 
+    .nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(2,18,45, .9);
+        width: 100%;
+        height: 500vh;
+        z-index: 99;
+        padding-top: 10rem
+    }  
+
+    .nav-menu li {
+        margin: 2rem 0;
+    }
+
+    .logo {
+        position: fixed;
+        left: 3rem;
+        top: 2rem;
+        z-index: 101;
+    }
+
+    /* About */
+     .about-container {
+         padding: 2rem 1.5rem;
+     }
+     
+    /* Services */
+     
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.5rem;
+    }
+
+    .service-item span {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Schedule */ 
+
+    .schedule-container {
+        padding: 0 1.5rem;
+    }
+     .schedule-item .line {
+        display: none;
+    } 
+    .schedule-item img {
+        width: 100%;
+    }
+    .schedule-item .circle {
+        margin: 0 auto;
+    }
+
+    /* Details */
+
+    .details {
+        padding: 0 1.5rem;
+    }
+    /* Media */
+
+    .media {
+        padding: 0 1.5rem;
+    }
+    /* Footer */
+
+    .footer {
+        padding: 2rem 0;
+    }
+    .margin-auto {
+        margin: 0 auto;
+    }
+    .footer-logo img {
+        max-height: 4rem;
+
+    }
+    .footer-top-item h5{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .sub-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social {
+        text-align: center;
+    }
+}
